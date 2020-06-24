@@ -1,0 +1,6 @@
+include README.md
+recursive-include material/admin/ *
+recursive-include material/admin/static/ *
+recursive-include material/admin/templates/ *
+recursive-exclude app *
+recursive-exclude tests *

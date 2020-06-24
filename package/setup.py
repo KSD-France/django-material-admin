@@ -10,16 +10,16 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="django-material-admin",
-    version="1.7.3",
+    version="1.7.4",
     license='MIT License',
     packages=find_packages(),
-    author="Anton Maistrenko",
+    author="KSD",
     include_package_data=True,
-    author_email="it2015maistrenko@gmail.com",
+    author_email="contact@ksd.fr",
     description="Material Design For Django Administration",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/MaistrenkoAnton/django-material-admin",
+    url="https://github.com/KSD-France/django-material-admin",
     classifiers=[
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",

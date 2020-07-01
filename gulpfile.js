@@ -46,4 +46,9 @@ gulp.task('uglify-js', function() {
     .pipe(gulp.dest(paths.scripts.dest))
 });
 
-gulp.task('default', gulp.series('sass','uglify-js'));
+gulp.task('copy', function () {
+  return gulp.src(paths.scripts.src)
+    .pipe(gulp.dest(paths.scripts.dest))
+});
+
+gulp.task('default', gulp.series('sass', 'copy', 'uglify-js'));

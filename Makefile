@@ -5,7 +5,7 @@ init:
 	venv/bin/pip install -r requirements.txt
 
 clean:
-	find . -maxdepth 0 -type d \( -iname 'build' -o -iname 'dist' -o -iname 'django_material_admin.egg-info' \) -prune -exec rm -rf {} \;
+	find . -maxdepth 1 -type d \( -iname 'build' -o -iname 'dist' -o -iname 'django_material_admin.egg-info' \) -prune -exec rm -rf {} \;
 
 update: clean
 	npm install

@@ -3,6 +3,7 @@
 
 {% block content %}
   <div id="content-main">
+    {% block preamble %}{% endblock %}
     <form id="{% block form_id %}{% endblock %}" class="change-form{% if form.visible_fields|length_is:"0" %} hidden{% endif %}" action="" method="post">
       {% csrf_token %}
       {% for hidden_field in form.hidden_fields %}

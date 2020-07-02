@@ -3,7 +3,7 @@
 
 {% block content %}
   <div id="content-main">
-    <form id="{% block form_id %}{% endblock %}" class="change-form" action="" method="post">
+    <form id="{% block form_id %}{% endblock %}" class="change-form{% if form.visible_fields|length_is:"0" %} hidden{% endif %}" action="" method="post">
       {% csrf_token %}
       {% for hidden_field in form.hidden_fields %}
         {{ hidden_field.errors }}
@@ -19,7 +19,7 @@
         {% endif %}
 
         {% for field in form.visible_fields %}
-          <div class="form-row{% if form.errors %} errors{% endif %}{% if form.visible_fields|length_is:"0" %} hidden{% endif %}">
+          <div class="form-row{% if field.errors %} errors{% endif %}">
             <div class="input-field{% if field.field.widget.input_type == "checkbox" %} checkbox-row{% endif %}"{% if not form.fields|length_is:'1' %} class="fieldBox{% if field.field.name %} field-{{ field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% endif %}>{% if not form.fields|length_is:"1" and not field.is_readonly %}{{ field.errors }}{% endif %}
               {% if field.field.widget.input_type == "checkbox" %}
                 <div class="action-checkbox">

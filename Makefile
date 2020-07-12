@@ -1,7 +1,7 @@
 init:
-	find . -type d \( -iname 'node_modules' -o -iname 'venv' \) -prune -exec rm -rf {} \;
+	find . -maxdepth 1 -type d \( -iname 'node_modules' -o -iname 'venv' \) -prune -exec rm -rf {} \;
 	npm install
-	virtualenv -p /usr/bin/python3.7 venv
+	virtualenv -p /usr/bin/python3 venv
 	venv/bin/pip install -r requirements.txt
 
 clean:

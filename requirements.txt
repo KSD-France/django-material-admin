@@ -1,9 +1,9 @@
 pep517==0.8.2
-Django==3.0.7
-Pillow==7.1.2
+Django==3.0.8
+Pillow==7.2.0
 django-daterangefilter==1.0.0
 psycopg2-binary==2.8.5
 django-admin-sortable2==0.7.6
 mock==4.0.2
 filefield-cache==0.0.5
-django-modeltranslation==0.15
+django-modeltranslation==0.15.1

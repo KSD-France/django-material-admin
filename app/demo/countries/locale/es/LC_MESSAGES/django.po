@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 17:36-0400\n"
+"POT-Creation-Date: 2020-07-14 13:21+0000\n"
 "PO-Revision-Date: 2020-05-10 18:20-0400\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
 "Language-Team: ES <LL@li.org>\n"
@@ -37,8 +37,9 @@ msgstr "Monarquía absoluta"
 msgid "N/A"
 msgstr "No disponible"
 
-#: demo/countries/models.py:9 demo/countries/models.py:59 demo/countries/models.py:63
-#: demo/countries/models.py:67 demo/countries/models.py:71 demo/countries/models.py:75
+#: demo/countries/models.py:9 demo/countries/models.py:59
+#: demo/countries/models.py:63 demo/countries/models.py:67
+#: demo/countries/models.py:71 demo/countries/models.py:75
 #: demo/countries/models.py:79
 msgid "Name"
 msgstr "Nombre"

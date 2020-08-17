@@ -18,7 +18,7 @@ CLASSIFIERS = [
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Framework :: Django :: 2.2",
-    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.1",
 ]
 INSTALL_REQUIRES = []
 
@@ -42,7 +42,7 @@ if __name__ == "__main__":
         description="Material Design For Django Administration",
         license="MIT License",
         url="https://github.com/KSD-France/django-material-admin",
-        version="1.5.0-ksd",
+        version="1.5.1-ksd",
         author="Anton Maistrenko",
         author_email="it2015maistrenko@gmail.com",
         maintainer="KSD",

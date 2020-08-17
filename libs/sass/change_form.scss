@@ -227,7 +227,9 @@ tr {
 .stacked-inline-close {
   text-align: right;
   cursor: pointer;
-  float: right;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
   margin: 0 1% 1% 0;
 }
 
@@ -248,4 +250,9 @@ div.url {
 
 .inline-related.has_original .delete {
   display: none;
+}
+
+.readonly-label {
+    width: 170px;
+    height: 10px;
 }

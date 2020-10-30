@@ -42,7 +42,7 @@ if __name__ == "__main__":
         description="Material Design For Django Administration",
         license="MIT License",
         url="https://github.com/KSD-France/django-material-admin",
-        version="1.5.3-ksd",
+        version="1.5.4-ksd",
         author="Anton Maistrenko",
         author_email="it2015maistrenko@gmail.com",
         maintainer="KSD",

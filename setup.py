@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 ###################################################################
 
-NAME = "django-material-admin"
+NAME = "django-material-admin-ksd"
 PACKAGES = find_packages(exclude=("app", "app.*", "tests", "tests.*"))
 CLASSIFIERS = [
     "Development Status :: 4 - Beta",

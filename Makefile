@@ -5,7 +5,7 @@ init:
 	venv/bin/pip install -r requirements.txt
 
 clean:
-	find . -maxdepth 1 -type d \( -iname 'build' -o -iname 'dist' -o -iname 'django_material_admin.egg-info' \) -prune -exec rm -rf {} \;
+	find . -maxdepth 1 -type d \( -iname 'build' -o -iname 'dist' -o -iname 'django_material_admin_ksd.egg-info' \) -prune -exec rm -rf {} \;
 
 update: clean
 	npm install
@@ -16,6 +16,6 @@ build: update
 	venv/bin/python -m pep517.build .
 
 scp: build
-	scp dist/* pip@pip.ksd.fr:repo/django-material-admin/
+	scp dist/* pip@pip.ksd.fr:repo/django-material-admin-ksd/
 
 .PHONY : init clean update scp
